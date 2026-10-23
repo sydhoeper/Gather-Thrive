@@ -3,26 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Gather & Thrive — our new website is coming soon.">
-  <title>Gather &amp; Thrive</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; min-height: 100svh; background: #f6f4ed; color: #243e33; font-family: system-ui, sans-serif; display: grid; place-items: center; padding: 24px; }
-    main { width: min(100%, 760px); text-align: center; padding: clamp(32px, 8vw, 80px) 16px; }
-    .eyebrow { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; }
-    h1 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(48px, 10vw, 92px); line-height: 1.08; letter-spacing: -.045em; margin: 32px 0; }
-    .rule { width: 48px; height: 2px; background: #647b58; margin: 32px auto; }
-    p { line-height: 1.7; font-size: 18px; margin: 0; }
-    .detail { font-size: 15px; color: #526459; margin-top: 12px; }
-  </style>
+  <meta name="description" content="Gather & Thrive helps people with disabilities connect with family, friends, and community in Missoula, Montana.">
+  <meta name="theme-color" content="#244f3d">
+  <title>Gather &amp; Thrive | Accessible gatherings in Missoula</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <p class="eyebrow">Welcome to</p>
-    <h1>Gather &amp; Thrive</h1>
-    <div class="rule" aria-hidden="true"></div>
-    <p>Our new website is coming soon.</p>
-    <p class="detail">We look forward to sharing more with you.</p>
-  </main>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="./" aria-label="Gather and Thrive home">Gather &amp; Thrive</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#about">About</a></li><li><a href="#spaces">Gathering spaces</a></li><li><a href="#questions">Questions</a></li><li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">Connecting community in Missoula, Montana</p>
+      <h1>A place to gather.<br>Room to connect.</h1>
+      <p class="lead">We help people with disabilities gather with their families, friends, and community members.</p>
+      <p>Time together matters. Finding a space that works for everyone is a good place to start.</p>
+      <div class="actions"><a class="button" href="#contact">Ask about a gathering</a><a class="text-link" href="#about">Get to know us</a></div>
+    </div>
+    <figure><img src="assets/gathering-room.png" width="795" height="824" alt="A bright meeting room with tables, movable chairs, and artwork along an exposed brick wall."><figcaption>A space for conversation and connection.</figcaption></figure>
+  </div>
+  <section class="soft" id="about" aria-labelledby="about-heading">
+    <div class="wrap split">
+      <div><p class="eyebrow">About Gather &amp; Thrive</p><h2 id="about-heading">Being together should be accessible.</h2></div>
+      <div><p class="lead">We know how difficult it can be to find a spacious place to gather that is quiet for people with hearing loss and accessible for people with mobility limitations.</p><p>Gather &amp; Thrive helps people with disabilities find ways to gather and stay connected in the Missoula community.</p>
+      <div class="notice"><p><strong>Our current availability</strong></p><p>We are currently limited in our ability to help with hosting. If you are interested in a gathering or volunteering, please email us or write to our post office box.</p></div></div>
+    </div>
+  </section>
+  <section id="spaces" aria-labelledby="spaces-heading">
+    <div class="wrap">
+      <div class="section-heading"><p class="eyebrow">Places to come together</p><h2 id="spaces-heading">Gathering spaces in Missoula</h2><p>We use meeting spaces at the Headwaters Foundation and large rooms at the Missoula Public Library as places to gather.</p></div>
+      <div class="spaces">
+        <img src="assets/meeting-space.jpg" alt="Meeting tables and chairs beside a counter with a sink and open shelving." width="1024" height="1451" loading="lazy">
+        <div><div class="space"><h3>Headwaters Foundation</h3><p>The space includes a full catering kitchen and two meeting rooms that can be configured to meet your needs.</p></div>
+        <div class="space"><h3>Missoula Public Library</h3><p>The library’s large rooms offer another place for people to gather.</p></div>
+        <p class="small">Every gathering is different. Please tell us about the space and access needs that matter to you when you get in touch.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="soft" aria-labelledby="planning-heading">
+    <div class="wrap"><div class="section-heading"><p class="eyebrow">Start with what matters to you</p><h2 id="planning-heading">Tell us about your gathering</h2><p>You can reach out for yourself or someone you know. These details can help start the conversation.</p></div>
+    <ol class="steps"><li><h3>Your idea</h3><p>Who would you like to bring together, and what would you like to do?</p></li><li><h3>Your access needs</h3><p>Tell us what would help you participate, such as a quieter room, space to move, or a particular seating arrangement.</p></li><li><h3>A way to reply</h3><p>Include your preferred contact details so we can respond to your inquiry.</p></li></ol>
+    </div>
+  </section>
+  <section id="questions" aria-labelledby="questions-heading">
+    <div class="wrap split"><div><p class="eyebrow">A few useful details</p><h2 id="questions-heading">Questions about gathering</h2></div>
+    <div>
+      <details><summary>Who does Gather &amp; Thrive help?</summary><p>We help people with disabilities gather with family, friends, and community members in Missoula, Montana.</p></details>
+      <details><summary>Can I ask about a gathering for someone else?</summary><p>Yes. You can contact us for yourself or someone you know. Tell us about the gathering and what would help the person participate.</p></details>
+      <details><summary>Are you currently helping host gatherings?</summary><p>Our ability to help with hosting is currently limited. Please email us or write to us to ask about your gathering and our availability.</p></details>
+      <details><summary>How can I volunteer?</summary><p>Email us or write to Gather &amp; Thrive at the post office box listed below. Let us know how you would like to help and how we can reach you.</p></details>
+    </div></div>
+  </section>
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="wrap split"><div><p class="eyebrow">Get in touch</p><h2 id="contact-heading">Let’s make room for connection.</h2><p>Interested in gathering or volunteering? We would like to hear from you.</p><p>Thank you for wanting to help make our community more accessible and inclusive.</p></div>
+    <div class="contact-box"><h3>Email us</h3><p><a class="text-link" href="mailto:info@gatherandthrivemt.org">info@gatherandthrivemt.org</a></p><h3>Write to us</h3><address>Gather &amp; Thrive<br>PO Box 8573<br>Missoula, MT 59807</address><p class="small" style="margin-top:1.5rem">Please include a way for us to reply. Our ability to help with hosting is currently limited.</p></div></div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><div><a class="brand" href="./">Gather &amp; Thrive</a><p>Connecting family, friends, and community.</p></div><nav aria-label="Footer"><ul><li><a href="#contact">Contact</a></li><li><a href="accessibility.html">Website accessibility</a></li></ul></nav></div><p class="wrap site-credit">2026 by Syd Hoeper</p></footer>
 </body>
 </html>
