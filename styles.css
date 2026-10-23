@@ -15,6 +15,10 @@
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: var(--space-4); }
+/* Respect visitors who prefer to avoid motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 body { margin: 0; background: var(--paper); color: var(--ink); font: var(--text-body)/var(--leading-body) var(--body-font); overflow-wrap: anywhere; }
 img { display: block; max-width: 100%; height: auto; }
 a { color: var(--brand); text-underline-offset: .22em; text-decoration-thickness: .08em; }
