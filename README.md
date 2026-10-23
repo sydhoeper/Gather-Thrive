@@ -24,3 +24,9 @@ Only the supplied room photographs are published. The watermarked stock image, s
 Target: WCAG 2.2 AA and applicable Revised Section 508 web requirements (including WCAG 2.0 AA and parsing checks). See `ACCESSIBILITY.md` for verification scope and remaining review work.
 
 After any design/content change, recheck contrast, keyboard operation, focus visibility, image alternatives, narrow layouts, browser zoom, and text spacing. Keep heading order meaningful, link names descriptive, and interactive targets at least 44 CSS pixels where practical. Do not disable browser zoom or remove focus outlines.
+
+## Small design system
+
+Five shared type roles live in `styles.css`: display (64px, 48px on mobile), section heading (32px), body (18px), secondary text (16px), and footer credit (12px). Subheadings use body size with heavier weight; introductory copy and addresses use body size. All sizes use rem units to respect browser preferences.
+
+Spacing uses a shared 4 / 8 / 16 / 24 / 32 / 48 / 80px scale. Section spacing is 80px on desktop and 48px on mobile. Shared colors, typography, spacing, and radius are defined at the top of the stylesheet; both pages use the same system.
